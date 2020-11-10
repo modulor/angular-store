@@ -1,0 +1,9 @@
+<div class="productContainer">
+  <p>{{ today | date:'medium' }}</p>
+  <img [src]="product.image">
+  <p appHighlight>{{ product.title | uppercase }}</p>
+  <p><strong>{{ product.price | currency }}</strong></p>
+  <p>{{ product.description }}</p>
+  <p>{{ 2 | exponential }}</p>
+  <button type="button" (click)="addProductToCart(product)">Add To Cart</button>
+</div>
