@@ -1,11 +1,13 @@
 <div class="productContainer">
   <p>{{ today | date:'medium' }}</p>
-  <img [src]="product.image">
+  <a [routerLink]="['/products', product.id]">
+    <img [src]="product.image">
+  </a>
   <p appHighlight>{{ product.title | uppercase }}</p>
   <p><strong>{{ product.price | currency }}</strong></p>
   <p>{{ product.description }}</p>
   <p>
-    <a [routerLink]="[ '/products', product.id ]" >More info</a>
+    <a [routerLink]="['/products', product.id]">More info</a>
   </p>
   <button type="button" (click)="addProductToCart(product)">Add To Cart</button>
 </div>

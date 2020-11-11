@@ -1,2 +1,13 @@
 <app-header></app-header>
 <h1>{{ product.title }}</h1>
+<div>
+  <img [src]="product.image">
+</div>
+<div>
+  <ul>
+    <li>
+      <strong>Precio:</strong> {{ product.price | currency}}
+    </li>
+  </ul>
+  <p>{{ product.description }}</p>
+</div>
