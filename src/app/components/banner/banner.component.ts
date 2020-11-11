@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
+  images: string[] = [
+    'assets/img/banner/banner-1.jpg',
+    'assets/img/banner/banner-2.jpg',
+    'assets/img/banner/banner-3.jpg',
+  ];
 
   constructor() { }
 
