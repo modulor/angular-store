@@ -9,7 +9,7 @@ export class ProductsService {
 
   constructor() { }
 
-  getProductById(id: string) {
+  getProductById(id: string): Product {
     return this.getAllProducts().find(item => id === item.id);
   }
 
