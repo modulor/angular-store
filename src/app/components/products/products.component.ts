@@ -8,6 +8,7 @@ import { Product } from '../../models/product.model';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+
   products: Product[] = this.productList();
 
   constructor() { }
